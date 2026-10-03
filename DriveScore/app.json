@@ -1,0 +1,32 @@
+{
+  "expo": {
+    "name": "DriveScore",
+    "slug": "drivescore",
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "isIosBackgroundLocationEnabled": true,
+          "isAndroidBackgroundLocationEnabled": true,
+          "isAndroidMotionActivityEnabled": false,
+          "motionUsagePermission": false
+        }
+      ]
+    ],
+    "ios": {
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "DriveScore uses your location to record driving trips.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "DriveScore uses your location during trips, including when the app is in the background."
+      }
+    },
+    "android": {
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_BACKGROUND_LOCATION",
+        "FOREGROUND_SERVICE",
+        "FOREGROUND_SERVICE_LOCATION"
+      ]
+    }
+  }
+}
